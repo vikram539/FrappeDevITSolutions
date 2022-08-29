@@ -8,6 +8,7 @@
             <?php include("assets/navbar.php");  ?>
         </header>        
         <?php include("assets/carousel.php");  ?>
+        <?php include("assets/services.php");  ?>
         
         <?php include("assets/footer.php");  ?>
     </main> 

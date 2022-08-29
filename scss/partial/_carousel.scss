@@ -6,20 +6,33 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            width: 50%;   
-            left: 8%;
+            width: 100%;   
+            left: 0;
             z-index: 99;
-            color: $colorWhite;
+            color: $colorBlack;
             padding: 1rem;
-            &::after{
-                content: "";
-                position: absolute;
-                top:0;
-                left: 0;
-                z-index: -99;
-                width: 100%;
-                height: 100%;
-                background: rgba(0,0,0,0.2);
+            // &::after{
+            //     content: "";
+            //     position: absolute;
+            //     top:0;
+            //     left: 0;
+            //     z-index: -99;
+            //     width: 100%;
+            //     height: 100%;
+            //     background: rgba(0,0,0,0.4);
+            //     border-radius: 7px;
+            // }
+            h2{
+                margin-bottom: 20px;
+            }
+            h4{
+                margin-bottom: 0;
+                color: $colorSeconday;
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+            p{
+                word-spacing: 1px;
             }
         }
     }
@@ -32,6 +45,8 @@
         color: #fff;
         .owl-prev, .owl-next{
             position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             font-size: 1.5rem !important;
             background: $colorPrimary !important;
             width: 50px;
