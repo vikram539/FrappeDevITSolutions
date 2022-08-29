@@ -1,0 +1,65 @@
+#navigation{
+    width:100%;
+    font-weight: 600; 
+    font-size: $fs_14;   
+    i{
+        font-size: 20px;
+    }
+    .navbar-brand{
+        font-size: $fs_14;
+        .allNavCategory{ 
+            display: flex;
+            align-items: center;
+            flex: 0 0 100%; 
+            justify-content: space-between;
+            min-width: 180px;
+            margin-right: 20px;
+            >span{
+                padding: 0 5px;
+            }
+            i:nth-of-type(1){
+                color: $colorSeconday;
+            }
+            i:nth-of-type(2){
+                font-size: 12px;
+            }           
+            
+        }        
+    }
+    .nav-link{
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+    #giftCartListing{
+        align-items: center;
+        li{
+            align-self: center;
+            a{
+                color: $colorBlack;
+            }
+        }
+        .callMe{
+            padding-right: 1rem;
+            i{
+                color: $colorPrimary;
+            }
+        }
+        .giftCart{
+            position: relative;
+            background-color: $colorPrimary;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: $colorWhite;
+                padding: 0.7rem 2rem;
+                i{
+                    padding-right: 5px;
+                }
+                span{
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

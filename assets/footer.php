@@ -1,37 +1,34 @@
 <footer class='marginTop_150'>
-    <div class="shadows"></div>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                <div class="footerLogo">
-                    <img src="<?= $images ?>footerLogo.png" alt="" class="img-fluid" />
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                <div class="footerAddress">
-                    <div class="footerInline">
-                        <h4><img src="<?= $images ?>mapMark.png" alt="" class="img-fluid" /><span>Eight International</span></h4>
-                        <p>C/o Anex Management Services Limited</p>
-                        <p>8th Floor - Ebene Tower</p>
-                        <p>52, Cybercity Ebene</p>
-                        <p>Rep. of Mauritius</p>
-                    </div>
-                    <div class="footerInline mt-5">
-                        <h3>
-                            <img src="<?= $images ?>phone.png" alt="" class="img-fluid" />
-                            <span>Tel:  +230 467-3003</span>
-                        </h3>
-                    </div>
-                    <div class="footerInline mt-3">
-                        <h3>
-                            <img src="<?= $images ?>fax.png" alt="" class="img-fluid" />
-                            <span>Fax: +230 454-7304</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </footer>
+<script src="<?= $root ?>bootstrap5/js/bootstrap.bundle.min.js"></script>
+<!-- javascript -->
+<script>
+    $(document).ready(function(){
+        var path = window.location.href;
+        var target = $(document).find('nav #navbarNav ul li a[href="'+path+'"]').closest("li");            
+        target.addClass('active');
+    })
+</script>
 <script src="https://kit.fontawesome.com/3fd486c100.js" crossorigin="anonymous"></script>
 <script src="<?=$root?>js/app.js" type="text/javascript"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots: false,
+        navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+</script>

@@ -1,0 +1,22 @@
+.commonBtnWrap{
+    display: table;
+    justify-content: center;
+    align-items: center;
+    .commonBtn{
+        text-decoration: none;
+        color: $colorWhite;
+        width: 200px;
+        background-color: $colorSeconday;
+        padding: 0.8rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        span{
+            text-transform: capitalize;
+        }
+        i{
+           font-size: 30px;
+        }
+    }
+}

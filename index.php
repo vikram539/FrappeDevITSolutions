@@ -6,7 +6,8 @@
         <header class="headerSection">
             <?php include("assets/headerAddCart.php");  ?>
             <?php include("assets/navbar.php");  ?>
-        </header>
+        </header>        
+        <?php include("assets/carousel.php");  ?>
         
         <?php include("assets/footer.php");  ?>
     </main> 
