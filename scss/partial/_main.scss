@@ -98,8 +98,10 @@
             }
         }
     }
-    .commonBtnWrap{
-        width: auto;
+    @include min_max_width(0px, 767px){
+        .commonBtnWrap{
+            width: auto;
+        }
     }
 }
 
