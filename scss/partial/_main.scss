@@ -21,7 +21,7 @@
             transition: all ease-out 0.5s;
         }
         >ul{
-            @include min_max_width(0px, 767px){
+            @include min_max_width(0px, 1024px){
                 justify-content: flex-start !important;
             }
             >li{                
@@ -115,6 +115,7 @@
         border-radius: 7px;
         img{
             transition: all linear 0.7s;
+            width: 100%;
         }
         &:hover img{
             transform: scale(1.1);
