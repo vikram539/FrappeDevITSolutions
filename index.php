@@ -9,6 +9,9 @@
         </header>        
         <?php include("assets/carousel.php");  ?>
         <?php include("assets/services.php");  ?>
+        <?php include("assets/browse-category.php");  ?>
+        <?php include("assets/promotion.php");  ?>
+        <?php include("assets/best-selling-products.php");  ?>
         
         <?php include("assets/footer.php");  ?>
     </main> 

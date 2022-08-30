@@ -34,15 +34,12 @@ body {
 h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
-  margin-bottom: 20px;
 }
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  h2 {
-    font-size: 40px;
-  }
+h2 span {
+  display: block;
+  color: #3cb815;
+  text-transform: capitalize;
 }
-
 h4 {
   margin-bottom: 25px;
   font-weight: 700;
@@ -68,8 +65,12 @@ p {
   max-width: 990px;
 }
 
-.marginTop_150 {
-  margin-top: 100px;
+.marginTop_80 {
+  margin-top: 80px;
+}
+
+.marginBottom_80 {
+  margin-bottom: 80px;
 }
 
 header .addCart {
@@ -300,6 +301,116 @@ header .headerRightSection {
   background-color: #289b04;
 }
 
+.seeAll {
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.textTypograph {
+  position: relative;
+}
+
+.servicesWrap {
+  width: 100%;
+  padding: 1rem 0;
+}
+.servicesWrap .servicesBlock {
+  width: 100%;
+  position: relative;
+}
+.servicesWrap .servicesBlock::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #3cb815;
+  left: 0;
+  bottom: -2px;
+  transition: all ease-out 0.5s;
+}
+.servicesWrap .servicesBlock > ul > li > object {
+  width: 45px;
+  height: 45px;
+}
+.servicesWrap .servicesBlock > ul .productName {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 1.5rem;
+  transition: all ease-out 0.5;
+}
+.servicesWrap .servicesBlock > ul .productName a {
+  text-decoration: none;
+  color: #000000;
+}
+.servicesWrap .row > [class*=col-] {
+  border-bottom: 2px solid #e7e7e7;
+}
+.servicesWrap .row > [class*=col-]:hover .servicesBlock::after {
+  width: 100%;
+}
+.servicesWrap .row > [class*=col-]:hover .servicesBlock .productName {
+  font-weight: 600;
+}
+
+.browseCategoryWrap {
+  width: 100%;
+}
+.browseCategoryWrap .item {
+  height: 240px;
+  overflow: hidden;
+  transition: all ease-out 0.5s;
+  border-radius: 8px;
+}
+.browseCategoryWrap .item .itemImg {
+  background-color: #fae9ea;
+  position: relative;
+  min-height: 300px;
+}
+.browseCategoryWrap .item .readMoreArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #3cb815;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%);
+}
+.browseCategoryWrap .item .readMoreArrow a i {
+  color: #fff;
+}
+.browseCategoryWrap .item:hover {
+  height: 300px;
+}
+
+.promotionWrap {
+  width: 100%;
+}
+.promotionWrap .promotionImg {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
+}
+.promotionWrap .promotionImg img {
+  transition: all linear 0.7s;
+}
+.promotionWrap .promotionImg:hover img {
+  transform: scale(1.1);
+}
+.promotionWrap .promotionImg .seeAll {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
 .owl-carousel {
   position: relative;
 }
@@ -318,6 +429,7 @@ header .headerRightSection {
 }
 .owl-carousel .item .captionText h2 {
   margin-bottom: 20px;
+  color: #ff7d09;
 }
 .owl-carousel .item .captionText h4 {
   margin-bottom: 0;
