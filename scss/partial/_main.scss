@@ -21,6 +21,9 @@
             transition: all ease-out 0.5s;
         }
         >ul{
+            @include min_max_width(0px, 767px){
+                justify-content: flex-start !important;
+            }
             >li{                
                 >object{
                     width: 45px;
@@ -90,7 +93,13 @@
         }        
         &:hover{
             height: 300px;
+            @include min_max_width(0px, 767px){
+                height: 395px;
+            }
         }
+    }
+    .commonBtnWrap{
+        width: auto;
     }
 }
 
@@ -115,3 +124,90 @@
         }
     }
 }
+
+// sellingProductsWrap
+.sellingProductsWrap{
+    width: 100%;
+    .sellingProductImg{
+        border: 2px solid #e7e7e7;
+        border-radius: 7px;
+        width: 100%;
+        position: relative;
+        .discountSection{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding:0.5rem 0;
+            margin: 0;
+            .discount{
+                
+            }
+            .like{
+                font-size: 1.5rem;
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+        h4{
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            color: #c1c1c1;
+        }
+        h3{
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+}
+.ribbon-2{
+    --f: 10px; /* control the folded part*/
+    --r: 15px; /* control the ribbon shape */
+    --t: 10px; /* the top offset */
+    
+    position: absolute;
+    inset: var(--t) calc(-1*var(--f)) auto auto;
+    padding: 0 10px var(--f) calc(10px + var(--r));
+    clip-path: 
+      polygon(0 0,100% 0,100% calc(100% - var(--f)),calc(100% - var(--f)) 100%,
+        calc(100% - var(--f)) calc(100% - var(--f)),0 calc(100% - var(--f)),
+        var(--r) calc(50% - var(--f)/2));
+    background: $colorPrimary;
+    color: $colorWhite;
+    box-shadow: 0 calc(-1*var(--f)) 0 inset #0005;
+  }
+  .details{
+    margin: 2rem 0 1rem;
+  }
+  p.amount{
+    color: $colorPrimary;
+    font-weight: 600;
+    margin-top: 1rem;
+    span{
+        color: $colorBlack;
+    }
+  }
+  .shopping-bag{
+    text-align: right;
+    a{
+        text-decoration: none;
+        color: $colorSeconday;
+        font-size: 1.5rem;
+    }
+  }
+  #myform {
+    text-align: center;
+    display: flex;
+    border: 2px solid #f0f0f0;
+    width: fit-content;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    border: none;
+}
+input.qtyplus { width:25px; height:25px; border: none;}
+input.qtyminus { width:25px; height:25px; border: none;}

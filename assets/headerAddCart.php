@@ -1,7 +1,7 @@
 <section class='addCart'>
     <div class="container">
         <div class="row align-items-center justify-content-between">
-            <div class="col-2 col-lg-2">
+            <div class="col-4 col-lg-2">
                 <div class="headerLogo">
                     <a href="<?= $root ?>">
                         <img src="<?= $images ?>logo.png" alt="<?= $name ?>" class="img-fluid" />
@@ -12,7 +12,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-5 col-lg-7">
+            <div class="col-4 col-lg-7">
                 <div class="headerMiddleSection">
                     <ul>
                         <li>
@@ -22,18 +22,20 @@
                             <p class='address'>
                                 <i class="fas fa-map-marker-alt"></i>                                
                                 <span>Address line1, address line2</span>
+                                <i class="fas fa-search d-lg-none"></i>
                             </p>
                         </li>
-                        <li>
+                        <li class='d-none d-lg-flex'>
                             <form method="post" class='searchForm'>
                                 <input type="text" class="form-control searchInput" placeholder="What are you looking for?" />
                                 <i class="fas fa-search"></i>
                             </form>
+                           
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-5 col-lg-3">
+            <div class="col-4 col-lg-3">
                 <div class="headerRightSection">
                     <ul>
                         <li class='favorite'>
@@ -48,7 +50,8 @@
                             </p>
                         </li>
                         <li class='userProfile'>
-                            <p> 
+                            <i class="far fa-user-circle d-lg-none"></i> 
+                            <p class='d-none d-lg-block'> 
                                 <i class="far fa-user-circle"></i>  
                                 <span>User Name <i class="fas fa-chevron-down"></i></span>                             
                             </p>

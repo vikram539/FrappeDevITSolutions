@@ -4,7 +4,7 @@
             <?php 
                 for($i = 1; $i <= 3; $i++){
             ?>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 mt-2 mb-2">
                     <div class="promotionImg">
                         <img src="<?=$images?>promotion/<?=$i?>.jpg" alt="" class='img-fluid' />
                         <a href="" class='seeAll'>See All</a>
@@ -15,4 +15,4 @@
             ?>            
         </div>
     </div>
-<section>
+</section>

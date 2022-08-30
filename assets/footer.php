@@ -1,5 +1,5 @@
-<footer class='marginTop_150'>
-
+<footer class='pt-4 bg-dark pb-4'>
+    <p class='text-white mb-0 text-center'>&copy;Powered By..... </p>
 </footer>
 <script src="<?= $root ?>bootstrap5/js/bootstrap.bundle.min.js"></script>
 <!-- javascript -->

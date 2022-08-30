@@ -5,7 +5,7 @@
             <div class="captionText">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <h4>we are delicacy</h4>
                             <h2>choose delicacy the best healthy way to life</h2>
                             <div class="commonBtnWrap">
@@ -24,7 +24,7 @@
             <div class="captionText">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-lg-6">
                             <h4>we are delicacy 2</h4>
                             <h2>choose delicacy the best healthy way to life 2</h2>
                             <div class="commonBtnWrap">

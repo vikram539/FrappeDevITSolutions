@@ -45,11 +45,7 @@ h2
 }
 h4
 { 
-    margin-bottom: 25px;
-    font-weight: 700;
-    font-size: 40px;
     @include min_max_width(0px, 767px){
-        font-size: 30px;
     }
 } 
 p

@@ -44,7 +44,14 @@
         }
     }
     #giftCartListing{
+        
         align-items: center;
+        
+        @include min_max_width(0px, 767px){            
+            margin-top: 20px !important;
+            justify-content: space-between;
+            width: 100%;
+        }
         li{
             align-self: center;
             a{

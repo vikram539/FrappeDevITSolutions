@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="<?= $root ?>bootstrap5/css/bootstrap.min.css" rel="stylesheet">
    
-<script  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<link href="<?= $root ?>lightbox/NSB_Box.css" rel="stylesheet" type="text/css" />
+	
+    <script  src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+	<!-- jquery and NSB_Box.js Javascript for NSB Box -->
+	<script src="<?= $root ?>lightbox/NSB_Box.js"></script>
+
     <link rel="stylesheet" href="<?= $root ?>css/style.css">
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="<?= $root ?>owlcarousel/css/owl.carousel.min.css">
